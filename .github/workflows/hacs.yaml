@@ -11,4 +11,4 @@ jobs:
     name: HACS Action
     steps:
       - uses: actions/checkout@v4
-      - uses: hacs/action@v25
+      - uses: hacs/action@main
