@@ -1,19 +1,18 @@
-name: Validate with HACS
+# .github/workflows/hacs.yaml
+name: Validate HACS Integration
 
 on:
-  pull_request: {}
   push:
     branches: [ main ]
+  pull_request:
 
 jobs:
   hacs:
     runs-on: ubuntu-latest
-    name: Validate HACS Integration
     steps:
       - uses: actions/checkout@v4
 
       - uses: hacs/action@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           category: integration
-          repository: ${{ github.repository }}
+          repository: tzachb/Homeseer-HA
