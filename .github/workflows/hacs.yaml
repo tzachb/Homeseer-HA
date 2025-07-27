@@ -1,13 +1,19 @@
+name: Validate with HACS
+
+on:
+  pull_request: {}            # ← explicitly an empty mapping
+  push:
+    branches:
+      - main
+
 jobs:
   hacs:
     runs-on: ubuntu-latest
     name: HACS Action
     steps:
       - uses: actions/checkout@v4
--     - uses: hacs/action@main
-+     - uses: hacs/action@main
-+       with:
-+         # let the action comment back on your PR
-+         token: ${{ secrets.GITHUB_TOKEN }}
-+         # this is an integration, not a plugin or theme
-+         category: integration
+
+      - uses: hacs/action@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          category: integration
