@@ -1,0 +1,9 @@
+{
+    "name": "HomeSeer (HS3/HS4)",
+    "content_in_root": true,
+    "domain": [
+        "homeseer"
+    ],
+    "homeassistant": "2024.11.0",
+    "render_readme": true
+}
