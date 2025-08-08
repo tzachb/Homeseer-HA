@@ -8,3 +8,4 @@ The repository follows the HACS structure:
 This PR replaces #3863 and #3896.
 
 @hacs/integration-maintainers — the repo has been cleaned and validation workflow is fixed. Could you please approve the workflows so the checks can run? Thank you!
+<!-- Triggering HACS validation -->
