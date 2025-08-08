@@ -1,17 +1,16 @@
 # .github/workflows/hacs.yaml
-name: Validate HACS Integration
+name: Validate HACS
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
+  push:
 
 jobs:
-  hacs:
+  validate:
+    name: Validate HACS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: hacs/action@main
         with:
           category: integration
