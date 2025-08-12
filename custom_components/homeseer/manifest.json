@@ -2,6 +2,7 @@
   "domain": "homeseer",
   "name": "HomeSeer",
   "documentation": "https://github.com/tzachb/Homeseer-HA",
+  "issue_tracker": "https://github.com/tzachb/Homeseer-HA/issues",
   "dependencies": [],
   "codeowners": ["@tzachb"],
   "version": "2025.8.1",
