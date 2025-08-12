@@ -1,10 +1,20 @@
-This PR adds the `tzachb/Homeseer-HA` integration to the HACS default list.
+# HomeSeer Integration for Home Assistant
 
-The repository follows the HACS structure:
-- `hacs.json` is in the root
-- `custom_components/homeseer/` includes `manifest.json`, integration files
-- `.github/workflows/hacs.yaml` exists for validation
+This custom integration allows Home Assistant to connect to HomeSeer HS3 and HS4 systems via the JSON API.
 
+## Features
+- Support for switches, sensors, dimmers, and more
+- Automatic discovery of HomeSeer devices
+- Works with both HS3 and HS4
 
-@hacs/integration-maintainers — the repo has been cleaned and validation workflow is fixed. Could you please approve the workflows so the checks can run? Thank you!
-<!-- Triggering HACS validation -->
+## Installation
+1. Install via HACS (once this repo is added to the default list)
+2. Restart Home Assistant
+3. Add the integration via the Home Assistant UI
+
+## Configuration
+You can configure this integration from the Home Assistant UI under **Settings → Devices & Services → Add Integration → HomeSeer**.
+
+## Links
+- [Documentation](https://github.com/tzachb/Homeseer-HA)
+- [Report Issues](https://github.com/tzachb/Homeseer-HA/issues)
