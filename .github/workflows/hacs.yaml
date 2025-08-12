@@ -1,4 +1,3 @@
-# .github/workflows/hacs.yaml
 name: Validate HACS
 
 on:
