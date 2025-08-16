@@ -1,20 +1,35 @@
-# HomeSeer Integration for Home Assistant
+HomeSeer-HA Integration (Custom HACS Repo)
 
-This custom integration allows Home Assistant to connect to HomeSeer HS3 and HS4 systems via the JSON API.
+This is a modern HomeSeer integration for Home Assistant (supports HS3/HS4 JSON API).
+Since it’s not yet in the official HACS default store, you can install it as a custom repository in HACS.
 
-## Features
-- Support for switches, sensors, dimmers, and more
-- Automatic discovery of HomeSeer devices
-- Works with both HS3 and HS4
+Installation
 
-## Installation
-1. Install via HACS (once this repo is added to the default list)
-2. Restart Home Assistant
-3. Add the integration via the Home Assistant UI
+Open Home Assistant → go to HACS → Integrations.
 
-## Configuration
-You can configure this integration from the Home Assistant UI under **Settings → Devices & Services → Add Integration → HomeSeer**.
+Click the three-dot menu (top-right) → Custom repositories.
 
-## Links
-- [Documentation](https://github.com/tzachb/Homeseer-HA)
-- [Report Issues](https://github.com/tzachb/Homeseer-HA/issues)
+In the URL field, paste:
+
+https://github.com/tzachb/Homeseer-HA
+
+
+Choose Integration as the category.
+
+Click Add.
+
+Now search for HomeSeer-HA in HACS and install it.
+
+Restart Home Assistant.
+
+Go to Settings → Devices & Services → Add Integration and search for HomeSeer-HA to configure it.
+
+Features
+
+Full support for HS3/HS4 devices via JSON API.
+
+Automatic device and entity discovery.
+
+Preserves entity IDs for existing automations.
+
+Supports switches, dimmers, sensors, binary sensors, and more.
