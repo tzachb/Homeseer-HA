@@ -1,12 +1,12 @@
 {
   "domain": "homeseer",
   "name": "HomeSeer (HS3/HS4)",
-  "version": "2025.8.1",
-  "documentation": "https://github.com/tzachb/Homeseer-HA",
-  "issue_tracker": "https://github.com/tzachb/Homeseer-HA/issues",
-  "dependencies": [],
   "codeowners": ["@tzachb"],
-  "requirements": [],
+  "dependencies": [],
+  "documentation": "https://github.com/tzachb/Homeseer-HA",
+  "integration_type": "hub",
   "iot_class": "local_polling",
-  "integration_type": "hub"
+  "issue_tracker": "https://github.com/tzachb/Homeseer-HA/issues",
+  "requirements": [],
+  "version": "2025.8.1"
 }
